@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/styles4.css" />
+    <title>Skill Assessment</title>
+</head>
+
+<body>
+    <div class="skill-assess-before">
+        <div class="div">
+            <div class="overlap">
+                <div class="text-wrapper">Skill Assessment</div>
+            </div>
+            <div class="overlap-group">
+                <div class="overlap-2">
+                    <div class="image"></div>
+                    <div class="rectangle"></div>
+                    <div class="text-wrapper-2">Category</div>
+                </div>
+                <div class="overlap-3">
+                    <div class="rectangle-2"></div>
+                    <div class="rectangle-3"></div>
+                    <div class="text-wrapper-3">Instructions:</div>
+                    <ol>
+                        <li class="navigating-away-from">
+                            <span class="span">Navigating away</span>
+                            <span class="text-wrapper-4">
+                                from the test <br />
+                                or refreshing the page will not be <br />
+                                possible after starting the test.
+                            </span>
+                        </li>
+                        <li class="once-you-start-you">
+                            <span class="text-wrapper-5">Once you start, you cannot </span>
+                            <span class="text-wrapper-6">switch</span>
+                            <span class="text-wrapper-5"> tabs or </span>
+                            <span class="text-wrapper-6">minimize</span>
+                            <span class="text-wrapper-5">
+                                the browser. Doing so will
+                            </span>
+                            <span class="text-wrapper-6">terminate the test.</span>
+                        </li>
+                        <li class="once-you-start-the">
+                            <span class="text-wrapper-5">Once you start the test, the</span>
+                            <span class="text-wrapper-6">timer begins,</span>
+                            <span class="text-wrapper-5"> and it cannot be</span>
+                            <span class="text-wrapper-6">paused or reset.</span>
+                        </li>
+                        <li class="you-are-not-allowed">
+                            <span class="text-wrapper-5">You are </span>
+                            <span class="text-wrapper-6">not allowed</span>
+                            <span class="text-wrapper-5">
+                                to revisit questions after submission.
+                            </span>
+                        </li>
+                    </ol>
+
+                    <div class="text-wrapper-7">Best of Luck!</div>
+                </div>
+                <div class="div-wrapper">
+                    <div class="text-wrapper-8">CSS</div>
+                </div>
+                <button id="start-test" class="overlap-4">
+                    <div class="text-wrapper-9">Start Test</div>
+                </button>
+            </div>
+            <div class="overlap-5">
+                <div class="rectangle-4"></div>
+                <img class="whatsapp-image" alt="Whatsapp image" src="../Images/sampleAssess.jpg" />
+                <div class="rectangle-5"></div>
+                <div class="rectangle-6"></div>
+                <div class="rectangle-7"></div>
+                <div class="rectangle-8"></div>
+                <div class="final-output">Expected Output</div>
+                <div class="text-wrapper-10">Your Output / Result</div>
+                <div class="text-wrapper-11">Your Code Here</div>
+                <div class="rectangle-9"></div>
+                <div class="text-wrapper-12">Question 1 of 5:</div>
+                <p class="modify-the-below">
+                    Modify the below code using Flexbox such that it matches the final
+                    output in the given <br>
+                    time.
+                </p>
+                <div class="text-wrapper-13">Time Remaining</div>
+                <div class="text-wrapper-14">00: 15: 00</div>
+                <div class="rectangle-10"></div>
+                <div class="rectangle-11"></div>
+                <div class="rectangle-12"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("start-test").addEventListener("click", function () {
+            localStorage.setItem('testDuration', 900);
+            window.location.href = "startTest.html";
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,489 @@
+.skill-assess-after {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.skill-assess-after .div {
+    background-color: #ffffff;
+    height: 832px;
+    position: relative;
+    width: 1280px;
+}
+
+.skill-assess-after .overlap {
+    background-color: #eee6e6;
+    border-radius: 25px;
+    height: 74px;
+    left: 336px;
+    position: absolute;
+    top: 20px;
+    width: 553px;
+}
+
+.skill-assess-after .text-wrapper {
+    color: #e63946;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-size: 32px;
+    font-weight: 600;
+    left: 135px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 18px;
+    white-space: nowrap;
+    width: 284px;
+}
+
+.skill-assess-after .overlap-group {
+    background-color: #d9d9d9;
+    border-radius: 20px 0px 0px 20px;
+    height: 634px;
+    left: 16px;
+    position: absolute;
+    top: 120px;
+    width: 327px;
+}
+
+.skill-assess-after .overlap-2 {
+    height: 43px;
+    left: 27px;
+    position: absolute;
+    top: 20px;
+    width: 273px;
+}
+
+.skill-assess-after .image {
+    background-color: #00000008;
+    border-radius: 90px;
+    height: 26px;
+    left: 235px;
+    position: absolute;
+    top: 17px;
+    width: 28px;
+}
+
+.skill-assess-after .rectangle {
+    background-color: #38cbdf;
+    border-radius: 90px;
+    height: 35px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 273px;
+}
+
+.skill-assess-after .text-wrapper-2 {
+    color: #000000;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-size: 15px;
+    font-weight: 600;
+    left: 98px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 6px;
+    white-space: nowrap;
+}
+
+.skill-assess-after .overlap-3 {
+    border-radius: 19px;
+    height: 386px;
+    left: 13px;
+    position: absolute;
+    top: 135px;
+    width: 300px;
+}
+
+.skill-assess-after .rectangle-2 {
+    background-color: #d9d9d9;
+    height: 100px;
+    left: 146px;
+    position: absolute;
+    top: 185px;
+    width: 100px;
+}
+
+.skill-assess-after .rectangle-3 {
+    background-color: #f2f2f2;
+    border-radius: 19px;
+    height: 386px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 300px;
+}
+
+.skill-assess-after .text-wrapper-3 {
+    color: #000000;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-size: 16px;
+    font-weight: 600;
+    left: 17px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 11px;
+    white-space: nowrap;
+}
+
+.skill-assess-after .text1 {
+    color: #000000;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-size: 15px;
+    font-weight: 400;
+    left: 25px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 53px;
+}
+
+.skill-assess-after .span {
+    font-weight: 600;
+}
+
+.skill-assess-after .text-wrapper-4 {
+    font-family: "Inter-Regular", Helvetica;
+}
+
+.skill-assess-after .text2 {
+    color: #000000;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 15px;
+    font-weight: 400;
+    left: 22px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 120px;
+    width: 266px;
+}
+
+.skill-assess-after .text-wrapper-5 {
+    color: #000000;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+
+.skill-assess-after .text-wrapper-6 {
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+}
+
+.skill-assess-after .text3 {
+    color: #000000;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 15px;
+    font-weight: 400;
+    left: 21px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 208px;
+    width: 266px;
+}
+
+.skill-assess-after .text4 {
+    color: #000000;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 15px;
+    font-weight: 400;
+    left: 21px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 280px;
+    width: 266px;
+}
+
+.skill-assess-after .text-wrapper-7 {
+    color: #000000;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-size: 15px;
+    font-weight: 600;
+    left: 105px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 359px;
+    white-space: nowrap;
+}
+
+.skill-assess-after .div-wrapper {
+    background-color: #ffffff;
+    border-radius: 90px;
+    box-shadow: 0px 4px 4px #00000040;
+    height: 35px;
+    left: 24px;
+    position: absolute;
+    top: 66px;
+    width: 273px;
+}
+
+.skill-assess-after .text-wrapper-8 {
+    color: #000000;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 15px;
+    font-weight: 400;
+    left: 119px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 7px;
+    white-space: nowrap;
+}
+
+.skill-assess-after .overlap-4 {
+    background-color: #32e6ff;
+    border-radius: 90px;
+    box-shadow: 0px 4px 4px #00000040;
+    height: 42px;
+    left: 27px;
+    position: absolute;
+    top: 570px;
+    width: 273px;
+}
+
+.skill-assess-after .text-wrapper-9 {
+    color: #262626;
+    font-family: "Inter-Bold", Helvetica;
+    font-size: 20px;
+    font-weight: 700;
+    left: 83px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 8px;
+    white-space: nowrap;
+}
+
+.skill-assess-after .overlap-5 {
+    height: 637px;
+    left: 353px;
+    position: absolute;
+    top: 117px;
+    width: 917px;
+}
+
+.skill-assess-after .rectangle-4 {
+    background-color: #f0f0f0;
+    height: 100px;
+    left: 1px;
+    position: absolute;
+    top: 1px;
+    transform: rotate(-0.13deg);
+    width: 916px;
+}
+
+.skill-assess-after .rectangle-5 {
+    background-color: #ebebeb;
+    border: 1px solid;
+    border-color: #464646;
+    height: 30px;
+    left: 474px;
+    position: absolute;
+    top: 376px;
+    width: 437px;
+}
+
+.skill-assess-after .rectangle-6 {
+    background-color: #ebebeb;
+    border: 1px solid;
+    border-color: #1d1d1d;
+    height: 22px;
+    left: 4px;
+    position: absolute;
+    top: 105px;
+    width: 470px;
+}
+
+.skill-assess-after .rectangle-8 {
+    background-color: #ebebeb;
+    border: 1px solid;
+    border-color: #191919;
+    height: 22px;
+    left: 474px;
+    position: absolute;
+    top: 105px;
+    width: 437px;
+}
+
+.skill-assess-after .final-output {
+    color: #000000;
+    font-family: "Inter-Medium", Helvetica;
+    font-size: 15px;
+    font-weight: 500;
+    left: 488px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 382px;
+    white-space: nowrap;
+}
+
+.skill-assess-after .text-wrapper-10 {
+    color: #000000;
+    font-family: "Inter-Medium", Helvetica;
+    font-size: 15px;
+    font-weight: 500;
+    left: 488px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 110px;
+    white-space: nowrap;
+}
+
+.skill-assess-after .text-wrapper-11 {
+    color: #000000;
+    font-family: "Inter-Medium", Helvetica;
+    font-size: 15px;
+    font-weight: 500;
+    left: 13px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 110px;
+    white-space: nowrap;
+}
+
+.skill-assess-after .rectangle-9 {
+    background-color: #ffffff;
+    border-radius: 9px;
+    height: 72px;
+    left: 13px;
+    position: absolute;
+    top: 12px;
+    width: 655px;
+}
+
+.skill-assess-after .text-wrapper-12 {
+    color: #000000;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-size: 15px;
+    font-weight: 600;
+    left: 25px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 20px;
+    white-space: nowrap;
+}
+
+.skill-assess-after .codingQuestions {
+    color: #000000;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-size: 15px;
+    font-weight: 600;
+    left: 25px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 27px;
+}
+
+.skill-assess-after .text-wrapper-13 {
+    color: #321a1a;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-size: 20px;
+    font-weight: 600;
+    left: 708px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 17px;
+    white-space: nowrap;
+}
+
+.skill-assess-after .text-wrapper-14 {
+    color: #000000;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-size: 24px;
+    font-weight: 600;
+    left: 727px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 45px;
+}
+
+#stop-test {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f81919;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#stop-test .text-wrapper-9 {
+    margin: 0;
+}
+
+.code-area {
+    background-color: #fff;
+    width: 49%;
+    height: 440px;
+    margin-top: 133px;
+    margin-bottom: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: monospace;
+    font-size: 14px;
+    overflow: auto;
+
+}
+
+.output-area {
+    background-color: #fff;
+    width: 45%;
+    height: 217px;
+    margin-top: -499px;
+    margin-left: 52%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: monospace;
+    font-size: 14px;
+    display: block;
+    white-space: pre-wrap;
+}
+
+#runButton {
+    margin-top: 1px;
+    margin-left: 405px;
+    padding: 6px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#finalOutput {
+    color: #000000;
+    font-family: "Inter-Medium", Helvetica;
+    font-size: 15px;
+    font-weight: 500;
+    left: 488px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 380px;
+    white-space: nowrap;
+}
+
+#expectedImage {
+    position: absolute;
+    top: 80px;
+    left: 150px;
+}
