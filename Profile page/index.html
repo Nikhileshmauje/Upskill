@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/styles2.css" />
+    <title>Upskill</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1><a href="../Main page/index.html">UPSKILL</a></h1>
+      </div>
+      <div class="search-bar">
+        <input type="search" placeholder="Skill, Job, Company" id="search" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Community</a></li>
+          <li><a href="#">Notifications</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="profile">
+        <img
+          src="../Images/profile-picture.PNG"
+          alt="Profile Picture"
+          width="100"
+          height="100"
+        />
+        <h2>Nayan Rathi</h2>
+        <p>Student at G.H. Raisoni College of Engineering (GHRCE), Nagpur</p>
+        <a href="#">See full educational profile here</a>
+      </section>
+
+      <section id="progress">
+        <div>
+          <h3>Skill Proficiency Meter</h3>
+          <canvas id="myChart"></canvas>
+        </div>
+        <div class="details">
+          <p class="heading">Education Level:</p>
+          <p>Undergraduate</p>
+          <p class="heading">Domain:</p>
+          <p >Full Stack Web Development</p>
+          <p class="heading">Rank: </p>
+          <p>8</p>
+        </div>
+      </section>
+
+      <section id="actions">
+        <a href="" id="skill-assess" style="background-color: aqua;">Continue Skill Assessment</a>
+        <a href="../Roadmap Page/Roadmap.HTML">Roadmap</a>
+        <a href="">Group Project</a>
+        <a href="">Resume Wizard</a>
+      </section>
+    </main>
+    <div id="recommendation-sec">
+
+      <section id="course-recom">
+        <h2>Course Recommendations</h2>
+        <ul class="course-list">
+          <li class="course">
+            <div class="images">
+              <img src="../Images/angela yu.PNG" alt="Angela Yu's Web Development Bootcamp">
+            </div>
+            <div class="info">
+              <h4>Web Dev Bootcamp-24</h4>
+              <p>Platform: Udemy</p>
+            </div>
+          </li>
+    
+          <li class="course">
+            <div class="images">
+              <img src="../Images/course2.PNG" alt="Another Udemy Course">
+            </div>
+            <div class="info">
+              <h4>Advanced JavaScript 2024</h4>
+              <p>Platform: Udemy</p>
+            </div>
+          </li>
+    
+          <li class="course">
+            <div class="images">
+              <img src="../Images/courseracourse.PNG" alt="Coursera Web Development Course">
+            </div>
+            <div class="info">
+              <h4>Full Stack Development</h4>
+              <p>Platform: Coursera</p>
+            </div>
+          </li>
+
+          <li class="course">
+            <div class="images">
+              <img src="../Images/course2.PNG" alt="Another Udemy Course">
+            </div>
+            <div class="info">
+              <h4>Advanced JavaScript 2024</h4>
+              <p>Platform: Udemy</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+    
+
+      <section id="job-recom">
+        <h2>Job Recommendations</h2>
+        <ul class="job-list">
+          <li class="job">
+            <div class="images">
+              <img src="../Images/google.PNG" alt="Web Developer Position">
+            </div>
+            <div class="info">
+              <h4>Front-end Developer</h4>
+              <p>Company: Google</p>
+              <p>Location: Remote</p>
+            </div>
+          </li>
+    
+          <li class="job">
+            <div class="images">
+              <img src="../Images/microsoft.PNG" alt="Full-stack Developer Position">
+            </div>
+            <div class="info">
+              <h4>Full-stack Developer</h4>
+              <p>Company: Microsoft</p>
+              <p>Location: Remote</p>
+            </div>
+          </li>
+
+          <li class="job">
+            <div class="images">
+              <img src="../Images/google.PNG" alt="Web Developer Position">
+            </div>
+            <div class="info">
+              <h4>Front-end Developer</h4>
+              <p>Company: Google</p>
+              <p>Location: Remote</p>
+            </div>
+          </li>
+
+          <li class="job">
+            <div class="images">
+              <img src="../Images/microsoft.PNG" alt="Full-stack Developer Position">
+            </div>
+            <div class="info">
+              <h4>Full-stack Developer</h4>
+              <p>Company: Microsoft</p>
+              <p>Location: Bangalore</p>
+            </div>
+          </li>
+
+        </ul>
+      </section>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2024 UPSKILL. All rights reserved.</p>
+        <nav>
+          <ul>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
