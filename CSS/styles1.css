@@ -87,6 +87,15 @@
     justify-content: space-evenly;
     align-items: center;
   }
+
+@media (max-width: 768px) {
+    main{
+        flex-wrap: wrap;
+    }
+    .container{
+        flex-wrap:wrap
+    }
+  }
   .introduction{
     width: 40%;
   }
