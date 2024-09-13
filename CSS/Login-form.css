@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 60vh;
+    width: 95vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #DAD4B5;
+    padding:80px;
+}
+.Upskill-logo{
+    text-align: center;
+}
+.Upskill-logo img{
+    width: 100px;
+    height: 40px;
+    border-radius: 3px;
+}
+
+h1{
+    text-align: center;
+}
+.form-body{
+    padding: 5px;
+    background-color:rgba(208, 198, 198, 0.5);
+    backdrop-filter:blur(10px);
+    border-radius: 20px;
+    border:1px solid white;
+    box-shadow: 10px;
+    padding: 20px;
+    
+}
+.form-body label{
+    font-size:20px;
+    padding-left: 10px;
+    
+}
+.submit-button{
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 0;
+    display: flex;
+    gap: 40px;
+            
+}
+.submit-button .button1{
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+        
+}
+.submit-button .button2{
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+}
+
+/* .form-body label{
+    width: 100px;
+} */
+
+
+.submit-button{
+    padding: 20px;
+}
+.submit-button input{
+    padding: 8px;
+    border-radius: 15px;
+    width: 100px;
+}
+
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"] {
+    width: 250px;  
+    height: 30px; 
+    padding: 10px; 
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+form {
+    border: 2px solid black; /* Black border */
+    padding: 20px; 
+    border-radius: 10px; /* Optional: Rounded corners */
+    background-color: #F2E8C6;
+}
+
