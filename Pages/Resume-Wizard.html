@@ -16,13 +16,19 @@
       </div>
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
+          <li><a href="../index.html">Home</a></li>
           <li><a href="#">Community</a></li>
-          <li><a href="#">Notifications</a></li>
+          <li><a href="#" id="notification-btn">Notifications</a></li>
           <li><a href="./profile.html" id="profile">Profile</a></li>
         </ul>
       </nav>
     </header>
+
+    <div id="notification-popup">
+      <h3>Notifications</h3>
+      <p>You have 3 new messages!</p>
+      <p>Your skill assessment results are ready.</p>
+    </div>
 
     <div class="main-body">
       <div class="left-body">
@@ -36,13 +42,13 @@
 
           <div>
             <p>
-              Fill in your details, select an appropriate template and download
-              your CV in no time.
+              Automatically Build Professional Resumes Based on Your Profile, <br>
+              Ensuring a Comprehensive Showcase of Your Skills!
             </p>
           </div>
 
           <div>
-            <button class="body-button">Create CV</button>
+            <button class="body-button">Generate Resume</button>
           </div>
         </div>
       </div>
@@ -51,21 +57,21 @@
       <div class="step-head"><h2>How does it work?</h2></div>
       <div class="inside-steps">
         <div class="step">
-          <h3>Step 1: Select Template</h3>
+          <h3>Step 1: Fill in Your Profile</h3>
           <hr />
-          <p>Select a template and customize your Resume.</p>
+          <p>Input your details to automatically create your resume.</p>
         </div>
 
         <div class="step">
-          <h3>Step 2: Customization</h3>
+          <h3>Step 2: Select a Template</h3>
           <hr />
-          <p>Change the format according to your requirement</p>
+          <p>Choose a template that suits your style.</p>
         </div>
 
         <div class="step">
-          <h3>Step 3: Download CV</h3>
+          <h3>Step 3: Download Resume</h3>
           <hr />
-          <p>Download Resume quickly and edit it anytime</p>
+          <p>Download Resume quickly and edit it anytime.</p>
         </div>
       </div>
     </div>
@@ -82,5 +88,35 @@
         </nav>
       </div>
     </footer>
+
+    <script>
+      const notificationBtn = document.getElementById('notification-btn');
+      const notificationPopup = document.getElementById('notification-popup');
+
+      notificationBtn.addEventListener('mouseover', () => {
+        notificationPopup.style.display = 'block';
+      });
+
+      notificationBtn.addEventListener('click', () => {
+        if (notificationPopup.style.display === 'block') {
+          notificationPopup.style.display = 'none';
+        } else {
+          notificationPopup.style.display = 'block';
+        }
+      });
+
+      notificationPopup.addEventListener('mouseover', () => {
+        notificationPopup.style.display = 'block';
+      });
+
+      function checkIfShouldClose(event) {
+        if (!notificationPopup.contains(event.relatedTarget) && !notificationBtn.contains(event.relatedTarget)) {
+          notificationPopup.style.display = 'none';
+        }
+      }
+
+      notificationBtn.addEventListener('mouseout', checkIfShouldClose);
+      notificationPopup.addEventListener('mouseout', checkIfShouldClose);
+    </script>
   </body>
 </html>
