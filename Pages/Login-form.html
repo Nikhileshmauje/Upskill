@@ -7,41 +7,43 @@
     <link rel="stylesheet" href="../CSS/Login-form.css">
 </head>
 <body>
-    <form name="registrationForm" onsubmit="return validateForm()">
-        <div class="Upskill-logo">
-            <img src="../Images/Upskill2.png" alt="Logo">
-        </div>
-        <h1>Registration Form</h1><br>
-        <div class="fname">
-            <label for="firstName">First Name:</label>
-            <input type="text" id="firstName" name="firstName" placeholder="Enter name"><br><br>
-        </div>
-
-        <div class="lname">
-            <label for="lastName">Last Name:</label>
-            <input type="text" id="lastName" name="lastName" placeholder="Enter Last Name"><br><br>
-        </div>
-
-        <div class="password">
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" placeholder="password"><br><br>
-        </div>
-
-        <div class="email">
-            <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="xyz@gmail.com"><br><br>
-        </div>
-
-        <div class="mobnumber">
-            <label for="mobileNumber">Mobile No:</label>
-        <input type="number" id="mobileNumber" name="mobileNumber" placeholder="Enter phone no"><br><br>
-        </div>
-
-
-        <div class="submit-button">
-            <input type="submit" value="Submit">
-        </div>
-    </form>
+    <main>
+        <form name="registrationForm" onsubmit="return validateForm()">
+            <div class="Upskill-logo">
+                <h1>UPSKILL</h1>
+            </div>
+            <h1>Register</h1><br>
+            <div class="fname">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Enter name"><br><br>
+            </div>
+    
+            <div class="lname">
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Enter Last Name"><br><br>
+            </div>
+    
+            <div class="password">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="password"><br><br>
+            </div>
+    
+            <div class="email">
+                <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="xyz@gmail.com"><br><br>
+            </div>
+    
+            <div class="mobnumber">
+                <label for="mobileNumber">Mobile No:</label>
+            <input type="number" id="mobileNumber" name="mobileNumber" placeholder="Enter phone no"><br><br>
+            </div>
+    
+    
+            <div class="submit-button">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </main>
     <script>
         function validateForm() {
             // Get form values
