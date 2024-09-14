@@ -5,20 +5,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Roadmap</title>
-    <link rel="stylesheet" href="../CSS/styles3.css">
+    <link rel="stylesheet" href="../CSS/roadmap.css">
 </head>
 
 <body>
     <header>
         <div class="logo">
-            <h1><a href="../index.html">UPSKILL</a></h1>
+            <h1><a href="../home.html">UPSKILL</a></h1>
         </div>
         <div class="search-bar">
             <input type="search" placeholder="Skill, Job, Company" id="search" />
         </div>
         <nav>
             <ul>
-                <li><a href="/index.html">Home</a></li>
+                <li><a href="/home.html">Home</a></li>
                 <li><a href="../Pages/community.html">Community</a></li>
                 <li><a href="#" id="notification-btn">Notifications</a></li>
                 <li><a href="/Pages/profile.html" id="profile">Profile</a></li>
@@ -77,22 +77,43 @@
             </div>
         </div>
     </main>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2024 UPSKILL. All rights reserved.</p>
-            <nav>
-                <ul>
-                    <li><a href="#">Terms</a></li>
-                    <li><a href="#">Privacy</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </nav>
+    <footer class="footer">
+        <div class="waves">
+          <div class="wave" id="wave1"></div>
+          <div class="wave" id="wave2"></div>
+          <div class="wave" id="wave3"></div>
+          <div class="wave" id="wave4"></div>
         </div>
-    </footer>
-</body>
+        <ul class="social-icon">
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a></li>
+        </ul>
+        <ul class="menu">
+          <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+      
+        </ul>
+        <p>&copy;2024 Upskill, Inc. | All Rights Reserved</p>
+      </footer>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-<script>
+     <script>
     const notificationBtn = document.getElementById('notification-btn');
     const notificationPopup = document.getElementById('notification-popup');
 
@@ -121,5 +142,6 @@
     notificationBtn.addEventListener('mouseout', checkIfShouldClose);
     notificationPopup.addEventListener('mouseout', checkIfShouldClose);
 </script>
+</body>
 
 </html>

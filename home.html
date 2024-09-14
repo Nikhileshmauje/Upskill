@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="./CSS/home.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <h1><a href="/home.html">UPSKILL</a></h1>
+        </div>
+        <div class="search-bar">
+          <input type="search" placeholder="Skill, Job, Company" id="search" />
+        </div>
+        <nav>
+          <ul>
+            <li><a href="./Pages/Roadmap.HTML">My Learning</a></li>
+            <li><a href="./Pages/community.html">Community</a></li>
+            <li><a href="#" id="notification-btn">Notifications</a></li>
+            <li><a href="./Pages/profile.html" id="profile">Profile</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <div class="container">
+            <div class="introduction">
+                <h1>Welcome to UPSKILL – Your Path to Mastery!</h1>
+                <p>Are you ready to transform your career and elevate your skills? At UPSKILL, we provide a personalized learning experience designed to help you achieve your professional goals. Whether you're looking to sharpen your expertise or explore new domains, our platform guides you through every step.</p>
+                <a href="#">Explore more</a>
+            </div>
+            <div class="represent">
+                <img src="./Images/learning.png" alt="learning">
+            </div>
+          </div>
+      </main>
+
+      <div id="notification-popup">
+        <h3>Notifications</h3>
+        <p>You have 3 new messages!</p>
+        <p>Your skill assessment results are ready.</p>
+      </div>
+
+      <div class="feature-container">
+        <br><br>
+        <div class="feature-head"><h2>What We Offer</h2></div>
+        <div class="features">
+          <div class="feature">
+            <h3>Tailored Learning Roadmaps</h3>
+            <hr>
+            <p>Gain access to structured pathways that suit your career aspirations.</p>
+          </div>
+          <div class="feature">
+            <h3>Skill Assessments</h3>
+            <hr>
+            <p>Test your proficiency and track your progress in real-time.</p>
+          </div>
+          <div class="feature">
+            <h3>Project-Based Learning</h3>
+            <hr>
+            <p>Work on real-world projects with peers to enhance both technical and soft skills.</p>
+          </div>
+          <div class="feature">
+            <h3>Certified Skill Verification</h3>
+            <hr>
+            <p>Earn certificates that validate your expertise and help you stand out.</p>
+          </div>
+          <div class="feature">
+            <h3>Integrated Resume Wizard</h3>
+            <hr>
+            <p>Auto update your resume in real time whenever you gain skill, experience or complete projects.</p>
+          </div>
+          <div class="feature">
+            <h3>Community & Collaboration</h3>
+            <hr>
+            <p>Connect with like-minded individuals and experts through our interactive community forums.</p>
+          </div>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      </div>
+
+      <footer class="footer">
+        <div class="waves">
+          <div class="wave" id="wave1"></div>
+          <div class="wave" id="wave2"></div>
+          <div class="wave" id="wave3"></div>
+          <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social-icon">
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a></li>
+        </ul>
+        <ul class="menu">
+          <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+      
+        </ul>
+        <p>&copy;2024 Upskill, Inc. | All Rights Reserved</p>
+      </footer>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+      <script>
+        const notificationBtn = document.getElementById('notification-btn');
+          const notificationPopup = document.getElementById('notification-popup');
+
+          notificationBtn.addEventListener('mouseover', () => {
+            notificationPopup.style.display = 'block';
+          });
+
+          notificationBtn.addEventListener('click', () => {
+            if (notificationPopup.style.display === 'block') {
+              notificationPopup.style.display = 'none';
+            } else {
+              notificationPopup.style.display = 'block';
+            }
+          });
+
+          notificationPopup.addEventListener('mouseover', () => {
+            notificationPopup.style.display = 'block';
+          });
+
+          function checkIfShouldClose(event) {
+            if (!notificationPopup.contains(event.relatedTarget) && !notificationBtn.contains(event.relatedTarget)) {
+              notificationPopup.style.display = 'none';
+            }
+          }
+
+          notificationBtn.addEventListener('mouseout', checkIfShouldClose);
+          notificationPopup.addEventListener('mouseout', checkIfShouldClose);
+      </script>
+</body>
+</html>
