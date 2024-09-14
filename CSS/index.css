@@ -10,7 +10,7 @@ html {
 
 body {
   font-family: acumin-pro, system-ui, sans-serif;
-  background: url("../Images/upskill\ background.png");
+  background: url("../Images/upskillBackground.png");
   margin: 0;
   display: grid;
   grid-template-rows: auto 1fr auto;

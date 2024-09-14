@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background: url("../Images/upskill\ background.png");
+    background: url("../Images/upskillBackground.png");
     background-color: #ffe5b4;
     background-repeat: no-repeat;
     background-size: cover;
@@ -79,7 +79,7 @@ main {
 
 .sidebar {
     width: 250px;
-    background: url("../Images/upskill\ background.png");
+    background: url("../Images/upskillBackground.png");
     background-color: #ffdab9;
     padding: 20px;
     border-right: 1px solid #ddd;
@@ -112,7 +112,7 @@ main {
 .content {
     flex: 1;
     padding: 20px;
-    background: url("../Images/upskill\ background.png");
+    background: url("../Images/upskillBackground.png");
     background-color: #ffe5b4;
 }
 

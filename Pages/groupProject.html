@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project System</title>
+    <link rel="stylesheet" href="../CSS/groupProject.css">
+</head>
+
+<header>
+    <div class="logo">
+        <h1><a href="../index.html">UPSKILL</a></h1>
+    </div>
+    <div class="search-bar">
+        <input type="search" placeholder="Skill, Job, Company" id="search" />
+    </div>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../Pages/community.html">Community</a></li>
+            <li><a href="#" id="notification-btn">Notifications</a></li>
+            <li><a href="../Pages/profile.html" id="profilebt">Profile</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Transform Your Skills with Real-World Projects</h1>
+            <p>Collaborate, Lead, and Grow with our unique Project System. Empower yourself with team-based projects and
+                expert feedback.</p>
+            <div class="cta-buttons">
+                <button class="cta-btn">Start a Project</button>
+                <button class="cta-btn join">Join a Team</button>
+            </div>
+        </div>
+    </section>
+
+    <div id="notification-popup">
+        <h3>Notifications</h3>
+        <hr>
+        <p>You have 3 new messages!</p>
+        <p>Your skill assessment results are ready.</p>
+    </div>
+
+    <section class="how-it-works">
+        <h2>How It Works</h2>
+        <div class="steps">
+            <div class="step">
+                <br>
+                <img src="/SVG/form_team.svg" alt="Form a Team">
+                <br>
+                <h3>Form a Team</h3>
+                <p>Collaborate with like-minded individuals on meaningful projects.</p>
+            </div>
+            <div class="step">
+                <img src="/SVG/real_world.svg" alt="Tackle Projects">
+                <h3>Tackle Real-World Projects</h3>
+                <p>Gain practical experience by working on domain-specific challenges.</p>
+            </div>
+            <div class="step">
+                <img src="/SVG/expert_review.svg" alt="Expert Review">
+                <h3>Expert Review</h3>
+                <p>Receive insightful feedback from industry professionals.</p>
+            </div>
+            <div class="step">
+                <img src="/SVG/profile_boost.svg" alt="Profile Boost">
+                <h3>Boost Your Profile</h3>
+                <p>Showcase your completed projects and enhance your resume.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-list">
+        <h2>Available Projects</h2>
+        <div class="projects">
+            <div class="project-card">
+                <h3>Web Development for Nonprofits</h3>
+                <p>Category: Web Development | Difficulty: Medium</p>
+                <button class="cta-btn small">View Details</button>
+            </div>
+            <div class="project-card">
+                <h3>AI-Powered Chatbot for E-Commerce</h3>
+                <p>Category: Artificial Intelligence | Difficulty: Hard</p>
+                <button class="cta-btn small">View Details</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2>Success Stories</h2>
+        <div class="testimonial-cards">
+            <div class="testimonial-card">
+                <p>"This platform helped me grow as a leader and prepared me for real-world challenges. It was an
+                    invaluable experience."</p>
+                <h4>- Elon Musk</h4>
+            </div>
+            <div class="testimonial-card">
+                <p>"The expert feedback provided through the projects was crucial in improving my technical skills and
+                    career prospects."</p>
+                <h4>- Aman Varma</h4>
+            </div>
+        </div>
+    </section>
+    <br><br><br><br><br><br><br>
+
+    <footer class="footer">
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social-icon">
+            <li class="social-icon__item"><a class="social-icon__link" href="#">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="#">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="#">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="#">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a></li>
+        </ul>
+        <ul class="menu">
+            <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+    
+        </ul>
+        <p>&copy;2024 Upskill, Inc. | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        const notificationBtn = document.getElementById('notification-btn');
+        const notificationPopup = document.getElementById('notification-popup');
+
+        notificationBtn.addEventListener('mouseover', () => {
+            notificationPopup.style.display = 'block';
+        });
+
+        notificationBtn.addEventListener('click', () => {
+            if (notificationPopup.style.display === 'block') {
+                notificationPopup.style.display = 'none';
+            } else {
+                notificationPopup.style.display = 'block';
+            }
+        });
+
+        notificationPopup.addEventListener('mouseover', () => {
+            notificationPopup.style.display = 'block';
+        });
+
+        function checkIfShouldClose(event) {
+            if (!notificationPopup.contains(event.relatedTarget) && !notificationBtn.contains(event.relatedTarget)) {
+                notificationPopup.style.display = 'none';
+            }
+        }
+
+        notificationBtn.addEventListener('mouseout', checkIfShouldClose);
+        notificationPopup.addEventListener('mouseout', checkIfShouldClose);
+    </script>
+</body>
+
+</html>
