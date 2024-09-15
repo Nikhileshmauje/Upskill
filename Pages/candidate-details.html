@@ -33,22 +33,23 @@
 
     <main>
       <div id="profile-container1">
-        <img
-          src="../Images/profile-picture.jpg"
-          alt="Profile Picture"
-          width="100"
-          height="100"
-        />
+        <img src="../Images/profile-picture.jpg" alt="Profile Picture" width="100" height="100" />
         <h2 id="can-name">Nayan Rathi</h2>
         <p>Student at G.H. Raisoni College of Engineering (GHRCE), Nagpur</p>
         <h3 class="about">About</h3>
-        <p class="about">As a Full Stack Developer, I have expertise in both front-end and back-end technologies, creating seamless, dynamic, and responsive web applications. With a solid foundation in HTML, CSS, and JavaScript for front-end development, paired with proficiency in backend frameworks like Node.js and databases like MongoDB, I build scalable and efficient solutions. My passion lies in solving complex problems, optimizing user experience, and developing applications that align with modern web standards. Whether it's designing intuitive user interfaces or architecting robust server-side logic, I strive to deliver comprehensive, high-quality web solutions.</p>
+        <p class="about" id="about-text">
+          As a Full Stack Developer, I have expertise in both front-end and back-end technologies, creating seamless, dynamic, and responsive web applications...
+          <span id="dots">...</span>
+          <span id="more-text" style="display: none;">
+            With a solid foundation in HTML, CSS, and JavaScript for front-end development, paired with proficiency in backend frameworks like Node.js and databases like MongoDB, I build scalable and efficient solutions. My passion lies in solving complex problems, optimizing user experience, and developing applications that align with modern web standards. Whether it's designing intuitive user interfaces or architecting robust server-side logic, I strive to deliver comprehensive, high-quality web solutions.
+          </span>
+        </p>
+        <button onclick="toggleReadMore()" id="read-more-btn">See More</button>
       </div>
 
       <div class="profile-container">
         <h1>Candidate Profile</h1>
 
-        <!-- Personal Info Section -->
         <div class="section">
           <h2>Personal Information</h2>
           <p>
@@ -65,7 +66,6 @@
           </p>
         </div>
 
-        <!-- Education Section -->
         <div class="section">
           <h2>Education</h2>
           <p>
@@ -80,7 +80,6 @@
           </p>
         </div>
 
-        <!-- Experience Section -->
         <div class="section">
           <h2>Experience</h2>
           <p>
@@ -93,7 +92,6 @@
           </p>
         </div>
 
-        <!-- Social Media Links Section -->
         <div class="section">
           <h2>Social Media Links</h2>
           <p>
@@ -110,7 +108,6 @@
           </p>
         </div>
 
-        <!-- Skills Section -->
         <div class="section">
           <h2>Skills</h2>
           <p>
@@ -130,86 +127,49 @@
           </p>
         </div>
 
-        <!-- Edit Button and Save Button -->
         <button id="edit-btn" class="edit-btn">Edit</button>
         <button id="save-btn" class="save-btn" style="display: none">
           Save
         </button>
       </div>
+      <div class="upskill-verified">
+        <h1>Upskill Verified</h1>
+        <div class="section">
+          <h2>Projects</h2>
+          <p>
+            <span class="profile-data" id="name"><strong>1. E-Commerce Website</strong></span>
+          </p>
+          <p>
+            <strong>Details:</strong>
+            <span class="profile-data" id="email">Developed a full-stack e-commerce platform where users can browse products, add them to their cart, and proceed to a secure checkout system. The project involved user authentication, product management, and order processing.</span>
+          </p>
+          <p>
+            <span class="profile-data" id="name"><strong>2. Weather Forecasting App</strong></span>
+          </p>
+          <p>
+            <strong>Details:</strong>
+            <span class="profile-data" id="email">A weather forecasting application that provides real-time weather updates, including temperature, humidity, and wind speed, based on the user's location.</span>
+          </p>
+          <p>
+            <span class="profile-data" id="name"><strong>3. Task Management App</strong></span>
+          </p>
+          <p>
+            <strong>Details:</strong>
+            <span class="profile-data" id="email">A task management tool that helps users organize and prioritize their to-do lists, set deadlines, and track progress on various tasks and projects.</span>
+          </p>
+        </div>
+        <div class="section"></div>
+          <h2>Certifications:</h2>
+          <p>
+            <span class="profile-data" id="name"><strong>The Web development bootcamp 2024</strong></span>
+          </p>
+          <p>
+            <strong>Credentials:</strong>
+            <span class="profile-data" id="email"><a href="#">click Here</a></span>
+          </p>
+        </div>
+      </div>
     </main>
-
-    <script>
-      const notificationBtn = document.getElementById("notification-btn");
-      const notificationPopup = document.getElementById("notification-popup");
-
-      notificationBtn.addEventListener("mouseover", () => {
-        notificationPopup.style.display = "block";
-      });
-
-      notificationBtn.addEventListener("click", () => {
-        if (notificationPopup.style.display === "block") {
-          notificationPopup.style.display = "none";
-        } else {
-          notificationPopup.style.display = "block";
-        }
-      });
-
-      notificationPopup.addEventListener("mouseover", () => {
-        notificationPopup.style.display = "block";
-      });
-
-      function checkIfShouldClose(event) {
-        if (
-          !notificationPopup.contains(event.relatedTarget) &&
-          !notificationBtn.contains(event.relatedTarget)
-        ) {
-          notificationPopup.style.display = "none";
-        }
-      }
-
-      notificationBtn.addEventListener("mouseout", checkIfShouldClose);
-      notificationPopup.addEventListener("mouseout", checkIfShouldClose);
-
-      document
-        .getElementById("edit-btn")
-        .addEventListener("click", function () {
-          // Get all profile data spans
-          const dataFields = document.querySelectorAll(".profile-data");
-
-          // Convert all span fields into input fields for editing
-          dataFields.forEach((field) => {
-            const value = field.innerText;
-            const input = document.createElement("input");
-            input.type = "text";
-            input.value = value;
-            input.classList.add("profile-input");
-            field.replaceWith(input);
-          });
-
-          // Show the Save button and hide the Edit button
-          document.getElementById("edit-btn").style.display = "none";
-          document.getElementById("save-btn").style.display = "block";
-        });
-
-      document
-        .getElementById("save-btn")
-        .addEventListener("click", function () {
-          // Get all input fields
-          const inputFields = document.querySelectorAll(".profile-input");
-
-          // Convert all input fields back into span fields
-          inputFields.forEach((input) => {
-            const value = input.value;
-            const span = document.createElement("span");
-            span.innerText = value;
-            span.classList.add("profile-data");
-            input.replaceWith(span);
-          });
-
-          // Show the Edit button and hide the Save button
-          document.getElementById("edit-btn").style.display = "block";
-          document.getElementById("save-btn").style.display = "none";
-        });
-    </script>
+    <script src="../src/can_details.js"></script>
   </body>
 </html>
