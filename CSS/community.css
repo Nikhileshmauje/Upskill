@@ -1,17 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
-    background: url("../Images/upskillBackground.png");
-    background-color: #ffe5b4;
-    background-repeat: no-repeat;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url("../Images/upskillBackground.png") no-repeat center center fixed;
+    background-color: #f0f2f5;
     background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    overflow-x: hidden;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 header {
@@ -19,7 +18,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 20px;
-    height: 28px;
+    height: 30px;
     background-color: #f8f8f8;
     border-bottom: 1px solid #ddd;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -29,10 +28,22 @@ header {
     color: #e63946;
     font-size: 24px;
     text-decoration: none;
+    margin-left: 30px;
+}
+
+#login {
+    border: 1px solid #e63946;
+    color: #e63946;
+}
+
+nav ul li a:hover,
+#login:hover {
+    background-color: #e63946;
+    color: white;
 }
 
 .search-bar {
-    width: 40%;
+    width: 42%;
     margin: 0 20px;
 }
 
@@ -59,144 +70,6 @@ nav ul li a {
     transition: background-color 0.3s ease;
 }
 
-#profile {
-    border: 1px solid #e63946;
-    color: #e63946;
-}
-
-nav ul li a:hover,
-#profile:hover {
-    background-color: #e63946;
-    color: white;
-}
-
-main {
-    display: flex;
-    margin: 20px;
-    flex: 1;
-    margin: 0;
-}
-
-.sidebar {
-    width: 250px;
-    background: url("../Images/upskillBackground.png");
-    background-color: #ffdab9;
-    padding: 20px;
-    border-right: 1px solid #ddd;
-    position: sticky;
-    top: 0;
-    height: 100vh;
-    overflow-y: auto;
-}
-
-.sidebar h2 {
-    margin-top: 0;
-    color: #e63946;
-}
-
-.sidebar ul li a {
-    color: #333;
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: #fff8e1;
-    display: block;
-    transition: background-color 0.3s ease;
-    margin-bottom: 8px;
-}
-
-.sidebar ul li a:hover {
-    background-color: #ffe5b4;
-}
-
-.content {
-    flex: 1;
-    padding: 20px;
-    background: url("../Images/upskillBackground.png");
-    background-color: #ffe5b4;
-}
-
-.community-forum,
-.virtual-events,
-.live-chat {
-    margin-bottom: 30px;
-    background-color: #fff8e1;
-    padding: 15px;
-    border-radius: 8px;
-}
-
-.community-forum h2,
-.virtual-events h2,
-.live-chat h2 {
-    border-bottom: 2px solid #333;
-    padding-bottom: 5px;
-    margin-bottom: 15px;
-}
-
-.search-bar {
-    margin-bottom: 8px;
-}
-
-.search-bar input[type="search"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-}
-
-.forum,
-.virtual-events .event {
-    border: 1px solid #ddd;
-    padding: 10px;
-    background-color: #fff;
-    margin-bottom: 10px;
-}
-
-.thread,
-.event {
-    margin-bottom: 15px;
-}
-
-.thread h4,
-.event h3 {
-    margin: 0;
-}
-
-.author {
-    font-weight: bold;
-}
-
-.reputation {
-    color: #777;
-    margin-left: 10px;
-}
-
-#chat-container {
-    height: 300px;
-    overflow-y: auto;
-    border: 1px solid #ddd;
-    padding: 10px;
-    background-color: #fff;
-    margin-bottom: 10px;
-}
-
-#chat-input {
-    width: calc(100% - 110px);
-    padding: 10px;
-    border: 1px solid #ddd;
-}
-
-#send-message {
-    padding: 10px;
-    border: 1px solid #ddd;
-    background-color: #cc401c;
-    color: #fff;
-    cursor: pointer;
-}
-
-#send-message:hover {
-    background-color: #de4d4d;
-}
-
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -215,7 +88,7 @@ main {
 #notification-popup {
     display: none;
     position: absolute;
-    top: 100px;
+    top: 80px;
     right: 40px;
     width: 280px;
     background-color: #f9f9f9;
@@ -233,7 +106,135 @@ main {
     margin: 10px 0;
 }
 
-.footer {
+main {
+    display: flex;
+    margin: 20px;
+    flex: 1;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-right: 1px solid #e0e0e0;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.sidebar h2 {
+    margin-top: 0;
+    color: #007bff;
+    font-size: 24px;
+}
+
+.sidebar ul li a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    display: block;
+    transition: background-color 0.3s;
+    margin-bottom: 8px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #e9ecef;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.community-forum,
+.virtual-events,
+.live-chat {
+    margin-bottom: 30px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.community-forum h2,
+.virtual-events h2,
+.live-chat h2 {
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.forum,
+.virtual-events .event {
+    border: 1px solid #ddd;
+    padding: 15px;
+    background-color: #ffffff;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.thread,
+.event {
+    margin-bottom: 20px;
+}
+
+.thread h4,
+.event h3 {
+    margin: 0;
+    color: #333;
+}
+
+.author {
+    font-weight: bold;
+}
+
+.reputation {
+    color: #777;
+    margin-left: 10px;
+}
+
+#chat-container {
+    height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 15px;
+    background-color: #ffffff;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+#chat-input {
+    width: calc(100% - 110px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+#send-message {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#send-message:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Styles */
+footer {
     position: relative;
     width: 100%;
     background: #3586ff;

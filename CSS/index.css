@@ -39,6 +39,22 @@ header {
   margin-left: 10px;
 }
 
+nav ul li a:hover {
+  background-color: #e63946;
+  color: white;
+}
+
+#login {
+  border: 1px solid #e63946;
+  color: #e63946;
+}
+
+nav ul li a:hover,
+#login:hover {
+  background-color: #e63946;
+  color: white;
+}
+
 .search-bar {
   width: 42%;
   margin: 0 20px;
@@ -189,6 +205,7 @@ nav ul li a {
   .feature:hover h3, .feature:hover p {
     color: white;
   }
+
    #notification-popup {
     display: none;
     position: absolute;

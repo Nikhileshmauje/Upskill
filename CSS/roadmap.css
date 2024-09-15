@@ -61,13 +61,13 @@
     color: white;
   }
 
-  #profile {
+  #login {
     border: 1px solid #e63946;
     color: #e63946;
   }
     
   nav ul li a:hover,
-  #profile:hover {
+  #login:hover {
     background-color: #e63946;
     color: white;
   }
