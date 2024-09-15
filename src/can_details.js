@@ -26,8 +26,6 @@ function checkIfShouldClose(event) {
   }
 }
 
-
-
 notificationBtn.addEventListener("mouseout", checkIfShouldClose);
 notificationPopup.addEventListener("mouseout", checkIfShouldClose);
 
@@ -61,8 +59,6 @@ document.getElementById("save-btn").addEventListener("click", function () {
   document.getElementById("edit-btn").style.display = "block";
   document.getElementById("save-btn").style.display = "none";
 });
-
-
 
 function toggleReadMore() {
   const dots = document.getElementById("dots");
