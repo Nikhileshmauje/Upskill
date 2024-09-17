@@ -53,7 +53,7 @@ input[type="password"] {
 .btn {
     width: 100%;
     padding: 10px;
-    background-color: #28a745;
+    background-color: #e63946;
     color: white;
     border: none;
     border-radius: 5px;
@@ -62,7 +62,7 @@ input[type="password"] {
 }
 
 .btn:hover {
-    background-color: #218838;
+    background-color: #c4303c;
 }
 
 .divider {
@@ -110,7 +110,7 @@ input[type="password"] {
 }
 
 .guest-btn {
-    background-color: red;
+    background-color: rgb(45, 94, 255);
     color: white;
     padding: 10px;
     border-radius: 5px;
@@ -118,6 +118,10 @@ input[type="password"] {
     margin-top: 15px;
     width: 100%;
     cursor: pointer;
+}
+
+.guest-btn:hover{
+    background-color: rgb(35, 71, 187);
 }
 
 .button-link {
